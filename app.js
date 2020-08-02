@@ -42,7 +42,7 @@ function NewTeamMember(){
                 break;
             case "Team is completed":
                 render(totalMembers);
-                createHtml();
+                NewHtml();
         }
     }) 
 }
@@ -170,8 +170,9 @@ function NeedEmail(email){
 }
 
 //print the information to the html inside the output file
-function createHtml(){
-
+function NewHtml(){
+    fs.writeFileSync(outputPath,render(totalMembers), "utf-8")
+    console.log("Your Teams html page has been created. Look into your output folder for results")
 }
 
 //run new team member function to enter team information
