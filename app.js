@@ -79,14 +79,65 @@ function NewManager(){
 
 //function to add new engineer
 function NewEngineer(){
-
+    inquirer.prompt([
+        {
+            type:"input",
+            name:"name",
+            message:"What is your new Engineers name?",
+            validate: Empty
+        },
+        {
+            type:"input",
+            name:"id",
+            message:"What is their employee id?",
+            validate: checkID
+        },
+        {
+            type:"input",
+            name:"email",
+            message:"What is your new Engineers email?",
+            validate: NeedEmail
+        },
+        {
+            type:"input",
+            name:"github",
+            message:"What is your new Engineers github?",
+            validate: Empty
+        },
+    ])
 }
 
 //function to add a new intern
 function NewIntern(){
-
+    inquirer.prompt([
+        {
+            type:"input",
+            name:"name",
+            message:"What is your new Interns name?",
+            validate: Empty
+        },
+        {
+            type:"input",
+            name:"id",
+            message:"What is their employee id?",
+            validate: checkID
+        },
+        {
+            type:"input",
+            name:"email",
+            message:"What is your new Interns email?",
+            validate: NeedEmail
+        },
+        {
+            type:"input",
+            name:"school",
+            message:"What is your new Interns School?",
+            validate: Empty
+        },
+    ])
 }
 
+//verification of information for each team member
 //make sure they are entering information asked
 function Empty(input){
     if(input===""){
@@ -97,4 +148,10 @@ function Empty(input){
     }
 }
 
+//print the information to the html inside the output file
+function createHtml(){
+
+}
+
+//run new team member function to enter team information
 NewTeamMember();
