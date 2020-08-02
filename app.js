@@ -148,6 +148,15 @@ function Empty(input){
     }
 }
 
+//make surre no duplicate IDs
+function checkID(id){
+    if((id==="")|| usedID[id]){
+        return "ID is invalid, try again";
+    }
+    usedID[id] = true;
+    return true;
+}
+
 //print the information to the html inside the output file
 function createHtml(){
 
