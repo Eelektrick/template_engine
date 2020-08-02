@@ -75,6 +75,13 @@ function NewManager(){
             validate: Empty
         },
     ])
+
+    //push info to create new member specific for this function
+    .then(input =>{
+        const manager = new Manager(input.name, input.id, input.email, input.officeNumber);
+        totalMembers.push(manager);
+        NewTeamMember();
+    })
 }
 
 //function to add new engineer
@@ -105,6 +112,13 @@ function NewEngineer(){
             validate: Empty
         },
     ])
+
+    //push info to create new member specific for this function
+    .then(input =>{
+        const engineer = new Engineer(input.name, input.id, input.email, input.github);
+        totalMembers.push(engineer);
+        NewTeamMember();
+    })
 }
 
 //function to add a new intern
@@ -135,6 +149,13 @@ function NewIntern(){
             validate: Empty
         },
     ])
+
+    //push info to create new member specific for this function
+    .then(input =>{
+        const intern = new Intern(input.name, input.id, input.email, input.school);
+        totalMembers.push(intern);
+        NewTeamMember();
+    })
 }
 
 //verification of information for each team member
