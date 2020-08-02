@@ -22,7 +22,7 @@ function NewTeamMember(){
     console.log("Lets build your team!");
     return inquirer.prompt([
         {
-            type:"input",
+            type:"list",
             name:"Employee",
             message:"What is this team members role?",
             choices:["Manager", "Engineer", "Intern", "Team is completed"] 
