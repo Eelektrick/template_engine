@@ -34,9 +34,9 @@ to find the best way to work with the code.
 
 # Video
 
-* [Link to video demo]()
+* [Link to video demo](https://drive.google.com/file/d/1H03EYxg8U1-0qYDz5uR-JXIo5-Pt5qbq/view?usp=sharing)
 
-![Gif of the video to use the application](images/.gif)
+![Gif of the video to use the application](images/teambuilder.gif)
 
 # Link
 
@@ -44,6 +44,6 @@ No link needed for this project but provided a video link how to operate the com
 
 # Screenshot
 
-![screenshot of app.js](images/)
-![screenshot of created html code](images/)
-![screenshot of created html webpage](images/)
+![screenshot of app.js](images/appJS.PNG)
+![screenshot of created html code](images/htmlCode.PNG)
+![screenshot of created html webpage](images/webpage.PNG)
