@@ -47,6 +47,54 @@ function NewTeamMember(){
     }) 
 }
 
+//function to add new manager
+function NewManager(){
+    inquirer.prompt([
+        {
+            type:"input",
+            name:"name",
+            message:"What is your new team managers name?",
+            validate: Empty
+        },
+        {
+            type:"input",
+            name:"id",
+            message:"What is their employee id?",
+            validate: checkID
+        },
+        {
+            type:"input",
+            name:"email",
+            message:"What is your new team managers email?",
+            validate: NeedEmail
+        },
+        {
+            type:"input",
+            name:"officeNumber",
+            message:"What is your new team managers office Number?",
+            validate: Empty
+        },
+    ])
+}
 
+//function to add new engineer
+function NewEngineer(){
+
+}
+
+//function to add a new intern
+function NewIntern(){
+
+}
+
+//make sure they are entering information asked
+function Empty(input){
+    if(input===""){
+        return "Please enter information asked";
+    }
+    else{
+        return true;
+    }
+}
 
 NewTeamMember();
