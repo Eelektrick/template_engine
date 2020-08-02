@@ -148,13 +148,25 @@ function Empty(input){
     }
 }
 
-//make surre no duplicate IDs
+//make sure no duplicate IDs
 function checkID(id){
     if((id==="")|| usedID[id]){
         return "ID is invalid, try again";
     }
     usedID[id] = true;
     return true;
+}
+
+//make sure  email is valid found in stack overflow
+function NeedEmail(email){
+    const correctEmail = /\S+@\S+\.\S+/;
+
+    if(value.match(correctEmail)){
+        return true;
+    }
+    else{
+        return "Please enter valid email";
+    }
 }
 
 //print the information to the html inside the output file
