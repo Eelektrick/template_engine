@@ -182,7 +182,7 @@ function checkID(id){
 function NeedEmail(email){
     const correctEmail = /\S+@\S+\.\S+/;
 
-    if(value.match(correctEmail)){
+    if(email.match(correctEmail)){
         return true;
     }
     else{
